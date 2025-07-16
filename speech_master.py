@@ -248,7 +248,7 @@ class PresentationCoach:
         return label, confidence * 100
         
     def structure_score(self, text):
-        sentences = sent_tokenize(text)
+        sentences = sent_tokenize(text) 
         score = min(100, len(sentences) * 10)
         return round(score, 2), len(sentences)
         
